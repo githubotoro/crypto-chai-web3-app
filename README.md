@@ -8,9 +8,9 @@
   </a>
   
   <p align="center">
-    <a href="https://crypto-chai-web3-app.vercel.app/"><strong>#stayTORO »</strong></a>
+    <a href="https://crypto-chai.vercel.app/"><strong>#stayTORO »</strong></a>
     <br />
-    <a href="https://crypto-chai-web3-app.vercel.app/">View Project</a>
+    <a href="https://crypto-chai.vercel.app/">View Project</a>
     |
     <a href="https://github.com/githubotoro/crypto-chai-web3-app/issues">Report Bug</a>
     |
