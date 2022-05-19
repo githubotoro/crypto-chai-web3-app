@@ -405,6 +405,57 @@ const Working = () => {
 		);
 	};
 
+	const ChaiAndChill = () => {
+		return (
+			<>
+				<div className="working-container">
+					<div className="working-box info-box " id="work-box">
+						<div className="working-title">Chai and Chill</div>
+						<div className="working-content">
+							Crypto Chai is the &nbsp;
+							<span className="highlighted-text">
+								decentralized
+							</span>
+							&nbsp; "CHAI" stop .
+							<br />
+							Whenever someone buys a "CHAI", they{" "}
+							<span className="highlighted-text">
+								become the owner
+							</span>{" "}
+							till someone buys a "CHAI" for them.
+							<br />
+							Thus,{" "}
+							<span className="highlighted-text">
+								everyone
+							</span>{" "}
+							can be the owner of "Crypto Chai", just by buying a
+							"Chai".
+							<hr />
+							You can{" "}
+							<span className="highlighted-text">
+								DONATE
+							</span>{" "}
+							Mainnet MATIC on below address.
+							<br />
+							Once we have sufficient{" "}
+							<span className="highlighted-text">
+								community support
+							</span>
+							, "Crypto Chai" would go live on{" "}
+							<span className="highlighted-text">
+								Polygon Mainnet.
+							</span>
+							<br />
+							<span className="highlighted-text">
+								0xD5a63CCE627372481b30AE24c31a3Fb94913D5Be
+							</span>
+						</div>
+					</div>
+				</div>
+			</>
+		);
+	};
+
 	// Handling submits
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -462,11 +513,18 @@ const Working = () => {
 
 	// Function to render if wallet is not connected yet
 	const renderNotConnectedContainer = () => (
-		<div className="connection-container">
-			<div className="connect-wallet-button">
-				<button onClick={connectWallet}>Connect Wallet</button>
+		<>
+			<div className="connection-container">
+				<div className="connect-wallet-button">
+					<button onClick={connectWallet}>Connect Wallet</button>
+				</div>
 			</div>
-		</div>
+
+			<div className="chai-and-chill-container">
+				<div className="brown-container"></div>
+				<ChaiAndChill />
+			</div>
+		</>
 	);
 
 	// Fetching memos
@@ -604,7 +662,7 @@ const Working = () => {
 							</div>
 						</>
 					) : (
-						renderNotConnectedContainer()
+						<>{renderNotConnectedContainer()}</>
 					)}
 				</>
 			)}
