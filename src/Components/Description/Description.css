@@ -45,3 +45,16 @@
 		text-shadow: 0.5px 0.5px #8b4513;
 	}
 }
+
+@media only screen and (max-width: 450px) {
+	.title {
+		margin: 10px;
+		font-size: 35px;
+		text-shadow: 1.5px 1.5px #8b4513;
+	}
+	.subtitle {
+		margin-top: -10px;
+		font-size: 13px;
+		text-shadow: 0.2px 0.2px #8b4513;
+	}
+}

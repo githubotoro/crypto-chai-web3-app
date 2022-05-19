@@ -283,3 +283,21 @@ textarea {
 .custom-alert {
 	all: initial;
 }
+
+@media only screen and (max-width: 470px) {
+	label {
+		font-size: 20px;
+	}
+	button {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	label {
+		font-size: 18px;
+	}
+	button {
+		font-size: 15px;
+	}
+}
