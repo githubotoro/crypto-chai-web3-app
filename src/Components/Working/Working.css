@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+.working-container {
+	padding: 2rem;
+	display: flex;
+	background-color: #2f2c28;
+	justify-content: space-between;
+}
+
+.working-box {
+	width: 45%;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: #d3d3d3;
+	font-family: "Titan One", cursive;
+	text-align: center;
+	color: #2f2c28;
+	overflow-wrap: break-word;
+}
+
+.info-box {
+	margin-top: -50px;
+	width: 100%;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: #d3d3d3;
+	font-family: "Titan One", cursive;
+	text-align: center;
+	color: #2f2c28;
+	overflow-wrap: break-word;
+}
+
+.working-box:hover {
+	background-color: #8b4513;
+}
+
+#work-box {
+	box-shadow: 4px 4px #8b4513;
+}
+
+#work-box:hover {
+	box-shadow: 4px 4px #d3d3d3;
+}
+
+.working-title {
+	font-size: 50px;
+	color: #cd853f;
+	text-shadow: 3px 3px #8b4513;
+}
+
+.working-box:hover .working-title {
+	color: #d3d3d3;
+	text-shadow: 3px 3px #2f2c28;
+}
+
+.working-content {
+	text-align: center;
+	font-size: 20px;
+	color: #2f2c28;
+}
+
+.working-box:hover .working-content {
+	color: #cd853f;
+}
+
+.owner-details {
+	margin-top: 0;
+}
+
+hr {
+	background: #8b4513;
+	height: 2px;
+	border: 2px solid #8b4513;
+	border-radius: 2px;
+}
+
+.working-box:hover hr {
+	background: #2f2c28;
+	border: 2px solid #2f2c28;
+}
+
+@media only screen and (max-width: 800px) {
+	.working-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.working-box {
+		width: 92%;
+	}
+
+	.working-title {
+		font-size: 35px;
+		text-shadow: 2px 2px #8b4513;
+	}
+}
+
+.connection-container {
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	display: flex;
+	background-color: #2f2c28;
+	font-family: "Titan One", cursive;
+	justify-content: center;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+	border-radius: 20px;
+	font-size: 40px;
+	padding: 0.7rem;
+	background: #cd853f;
+	color: #2f2c28;
+	box-shadow: 4px 4px #d3d3d3;
+}
+
+button:hover {
+	background: #d3d3d3;
+	color: #2f2c28;
+	box-shadow: 4px 4px #cd853f;
+}
+
+.connected-container {
+	padding-top: 20px;
+	background-color: #2f2c28;
+	font-family: "Titan One", cursive;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	font-size: 20px;
+	width: 100%;
+	font-family: "Titan One", cursive;
+	background: #d3d3d3;
+	color: #2f2c28;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#message {
+	border-radius: 5px;
+	font-size: 20px;
+	width: 100%;
+	font-family: "Titan One", cursive;
+	background: #d3d3d3;
+	color: #2f2c28;
+	margin-top: 10px;
+}
+
+label {
+	font-size: 30px;
+	color: #cd853f;
+	text-shadow: 2px 2px #8b4513;
+	margin-top: 100px;
+}
+
+.memo-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: #d3d3d3;
+}
+
+.memo-box {
+	border-radius: 1rem;
+	margin: 10px;
+	background-color: #2f2c28;
+	font-family: "Titan One", cursive;
+	text-align: center;
+	color: #d3d3d3;
+	overflow-wrap: break-word;
+	align-items: center;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: lighter;
+}
+
+.memo-box:hover {
+	background-color: #cd853f;
+	color: #2f2c28;
+}
+
+#memo-box-id {
+	box-shadow: 4px 4px #cd853f;
+}
+
+#memo-box-id:hover {
+	box-shadow: 4px 4px #8b4513;
+}
+
+.memos-received {
+	text-align: center;
+	font-family: "Titan One", cursive;
+	font-size: 50px;
+	color: #cd853f;
+	background-color: #d3d3d3;
+	text-shadow: 3px 3px #8b4513;
+}
+
+p {
+	margin: 0;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+}
+
+textarea {
+	color: #2f2c28;
+}
+
+.highlighted-text {
+	color: #8b4513;
+	text-transform: uppercase;
+}
+
+.highlighted-text-2 {
+	color: #cd853f;
+	text-transform: uppercase;
+}
+
+.memo-box:hover .highlighted-text-2 {
+	color: #d3d3d3;
+}
+
+.working-box:hover .highlighted-text {
+	color: #2f2c28;
+}
+
+@media only screen and (max-width: 800px) {
+	button {
+		font-size: 30px;
+	}
+}
+
+.memos-container {
+	background: #d3d3d3;
+}
+
+.switch-to-polygon-container {
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	color: #d3d3d3;
+	text-shadow: 2px 2px #2f2c28;
+	font-family: "Titan One", cursive;
+	background: #8b4513;
+	padding: 2rem;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.switch-button {
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	color: #d3d3d3;
+	text-shadow: 2px 2px #2f2c28;
+	font-family: "Titan One", cursive;
+	background: #8b4513;
+	padding-bottom: 2rem;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.polygon-faucet {
+	all: initial;
+}
+
+.faucet {
+	cursor: pointer;
+}
+
+.custom-alert {
+	all: initial;
+}

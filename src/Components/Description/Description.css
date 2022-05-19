@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+.description-container {
+	justify-content: space-around;
+	display: flex;
+	font-family: "Titan One", cursive;
+	font-weight: lighter;
+	background-color: #d3d3d3;
+}
+
+.crypto-chai-img {
+	max-width: 350px;
+}
+
+.title-container {
+	margin-top: -10px;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #d3d3d3;
+	font-family: "Titan One", cursive;
+	align-items: center;
+}
+
+.title {
+	color: #cd853f;
+	font-size: 100px;
+	text-shadow: 5px 5px #8b4513;
+}
+
+.subtitle {
+	color: #2f2c28;
+	font-size: 36px;
+	text-shadow: 2px 2px #cd853f;
+}
+
+@media only screen and (max-width: 800px) {
+	.title {
+		font-size: 60px;
+		text-shadow: 3px 3px #8b4513;
+	}
+
+	.subtitle {
+		font-size: 22px;
+		text-shadow: 0.5px 0.5px #8b4513;
+	}
+}

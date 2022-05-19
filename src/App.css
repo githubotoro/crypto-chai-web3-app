@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
+
+.container {
+	display: flex;
+	flex-direction: column;
+	font-family: "Erica One", cursive;
+}
+
+/* colors
+
+light black, dark brown, occur yellow, white
+
+#2f2c28
+#8b4513
+#cd853f
+#d3d3d3
+
+colors */
+
+.working-container {
+	padding: 2rem;
+	/* display: flex; */
+	background-color: #2f2c28;
+	justify-content: space-between;
+}
+
+.working-box {
+	width: 45%;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: #d3d3d3;
+	font-family: "Titan One", cursive;
+	text-align: center;
+	color: #2f2c28;
+	overflow-wrap: break-word;
+}
+
+#work-box {
+	box-shadow: 4px 4px #8b4513;
+}
+
+.working-title {
+	font-size: 50px;
+	color: #cd853f;
+	text-shadow: 3px 3px #8b4513;
+}
+
+.working-content {
+	text-align: center;
+	font-size: 20px;
+	color: #2f2c28;
+}
+
+.owner-details {
+	margin-top: 0;
+}
+
+hr {
+	background: #8b4513;
+	height: 2px;
+	border: 2px solid #8b4513;
+	border-radius: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+	.working-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.working-box {
+		width: 92%;
+	}
+
+	.working-title {
+		font-size: 35px;
+		text-shadow: 2px 2px #8b4513;
+	}
+}
+
+/* .owner-address {
+	margin-top: -10px;
+} */

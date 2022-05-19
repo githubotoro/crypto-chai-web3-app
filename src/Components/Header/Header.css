@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+.container {
+	display: flex;
+	font-family: "Titan One", cursive;
+	font-weight: lighter;
+}
+
+.background {
+	width: 100%;
+	background-color: #2f2c28;
+	margin: 0;
+	padding: 0rem 3rem;
+}
+
+.links {
+	flex-wrap: wrap;
+	font-size: 1.5rem;
+	margin: 1rem;
+	padding: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	font-weight: lighter;
+	text-decoration: none;
+	color: #cd853f;
+	text-shadow: 1px 1px #8b4513;
+}
+
+a:hover {
+	color: #d3d3d3;
+}
+
+@media only screen and (max-width: 600px) {
+	a {
+		font-size: 1rem;
+	}
+}

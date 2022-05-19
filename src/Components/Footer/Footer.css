@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+.footer-container {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	font-family: "Titan One", cursive;
+	font-weight: lighter;
+	background-color: #2f2c28;
+}
+
+.footer-box {
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	font-weight: lighter;
+	text-decoration: none;
+	color: #cd853f;
+	text-shadow: 1px 1px #8b4513;
+}
+
+a:hover {
+	color: #d3d3d3;
+}
+
+.footer-quote {
+	font-weight: lighter;
+	font-size: 50px;
+	color: #cd853f;
+	text-shadow: 3px 3px #8b4513;
+}
+
+@media only screen and (max-width: 800px) {
+	.footer-quote {
+		font-size: 30px;
+		text-shadow: 2px 2px #8b4513;
+	}
+}
+
+.ending-line {
+	font-weight: lighter;
+	font-size: 30px;
+	color: #d3d3d3;
+	text-shadow: 2px 2px #2f2c28;
+}
