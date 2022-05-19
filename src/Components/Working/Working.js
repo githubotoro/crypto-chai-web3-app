@@ -589,17 +589,23 @@ const Working = () => {
 				</>
 			) : (
 				<>
-					<div className="switch-to-polygon-container">
-						<div className="switch-to-polygon">
-							Please switch to Polygon Mumbai Testnet.
-						</div>
-					</div>
+					{currentAccount ? (
+						<>
+							<div className="switch-to-polygon-container">
+								<div className="switch-to-polygon">
+									Please switch to Polygon Mumbai Testnet.
+								</div>
+							</div>
 
-					<div className="switch-button">
-						<button onClick={switchNetwork}>
-							Click here to Switch!
-						</button>
-					</div>
+							<div className="switch-button">
+								<button onClick={switchNetwork}>
+									Click here to Switch!
+								</button>
+							</div>
+						</>
+					) : (
+						renderNotConnectedContainer()
+					)}
 				</>
 			)}
 		</>
