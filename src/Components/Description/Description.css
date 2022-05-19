@@ -48,13 +48,13 @@
 
 @media only screen and (max-width: 450px) {
 	.title {
-		margin: 10px;
-		font-size: 35px;
+		margin: 12px;
+		font-size: 44px;
 		text-shadow: 1.5px 1.5px #8b4513;
 	}
 	.subtitle {
 		margin-top: -10px;
-		font-size: 13px;
+		font-size: 16px;
 		text-shadow: 0.2px 0.2px #8b4513;
 	}
 }
