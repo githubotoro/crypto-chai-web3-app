@@ -73,7 +73,7 @@
 </a>
 </div>
 
-Crypto Chai is the Decenrtalized Chai Stop (aka Chai Ki Tapri) on Polygon. Whenever you buy a Chai for someone, you become the owner of Crypto Chai. Vice-versa, whenever someone buys you a Chai, they become the owner of Crypto Chai. Thus, everyone can own the Crypto Chai by becoming the owner of deployed smart contract on Polygon. Indeed, we all are just a "CHAI" away! ☕
+Crypto Chai is the Decentralized Chai Stop (aka Chai Ki Tapri) on Polygon. Whenever you buy a Chai for someone, you become the owner of Crypto Chai. Vice-versa, whenever someone buys you a Chai, they become the owner of Crypto Chai. Thus, everyone can own the Crypto Chai by becoming the owner of deployed smart contract on Polygon. Indeed, we all are just a "CHAI" away! ☕
 
 <!-- ABOUT THE PROJECT -->
 
