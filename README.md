@@ -69,7 +69,7 @@
 
 <div align="center">
 <a href="https://crypto-chai.vercel.app/">
-    <img src="images/crypto-chai-title.png" alt="logo" height="100">
+    <img src="Images/crypto-chai-title.png" alt="logo" height="100">
 </a>
 </div>
 
