@@ -93,35 +93,38 @@ const Working = () => {
 					"any"
 				);
 				const signer = provider.getSigner();
-				const cryptoChai = new ethers.Contract(
+				const CryptoChai = new ethers.Contract(
 					contractAddress,
 					contractABI,
 					signer
 				);
 
-				let totalChaisPromise = cryptoChai.chais();
+				let totalChais = await CryptoChai.chais();
+				setChais(totalChais.toNumber());
 
-				totalChaisPromise.then(function (result) {
-					let totalChais = result.toNumber();
-					setChais(totalChais);
-					console.log(`Total Chais served till now: ${totalChais}`);
-				});
+				// totalChaisPromise.then(function (result) {
+				// 	let totalChais = result.toNumber();
+				// 	setChais(totalChais);
+				// 	console.log(`Total Chais served till now: ${totalChais}`);
+				// });
 
-				let ownerPromise = cryptoChai.owner();
+				let owner = await CryptoChai.owner();
+				setOwner(owner.toString());
 
-				ownerPromise.then(function (result) {
-					let owner = result.toString();
-					setOwner(owner);
-					console.log(`Owner of Crypto Chai is: ${owner}`);
-				});
+				// ownerPromise.then(function (result) {
+				// 	let owner = result.toString();
+				// 	setOwner(owner);
+				// 	console.log(`Owner of Crypto Chai is: ${owner}`);
+				// });
 
-				let ownerNamePromise = cryptoChai.ownerName();
+				let ownerName = await CryptoChai.ownerName();
+				setOwnerName(ownerName.toString());
 
-				ownerNamePromise.then(function (result) {
-					let ownerName = result.toString();
-					setOwnerName(ownerName);
-					console.log(`Name of Crypto Chai Owner is: ${ownerName}`);
-				});
+				// ownerNamePromise.then(function (result) {
+				// 	let ownerName = result.toString();
+				// 	setOwnerName(ownerName);
+				// 	console.log(`Name of Crypto Chai Owner is: ${ownerName}`);
+				// });
 			}
 		} catch (error) {
 			console.log(error);
