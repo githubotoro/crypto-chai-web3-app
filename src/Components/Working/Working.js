@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { networks } from "../../Utils/networks";
 import Swal from "sweetalert2";
+import { utils } from "ethers";
 
 const Working = () => {
 	const contractAddress = "0x70856254B2bEc0c6B0a591554bbbbea7b40389EB";
@@ -18,6 +19,9 @@ const Working = () => {
 	const [ownerName, setOwnerName] = useState("");
 	const [chais, setChais] = useState(0);
 	const [network, setNetwork] = useState("");
+	const [currentChain, setCurrentChain] = useState("");
+
+	const PolygonChain = "0x13881";
 
 	// Function to switch network
 	const switchNetwork = async () => {
@@ -28,20 +32,20 @@ const Working = () => {
 					method: "wallet_switchEthereumChain",
 					params: [{ chainId: "0x13881" }], // Checking networks.js for hexadecimal network ids
 				});
+				setCurrentChain(PolygonChain);
 			} catch (error) {
 				// This error code means that the chain we want has not been added to MetaMask
 				// In this case we ask the user to add it to their MetaMask
 				if (error.code === 4902) {
 					try {
+						console.log("hello");
 						await window.ethereum.request({
 							method: "wallet_addEthereumChain",
 							params: [
 								{
-									chainId: "0x13881",
+									chainId: utils.hexValue(80001),
 									chainName: "Polygon Mumbai Testnet",
-									rpcUrls: [
-										"https://rpc-mumbai.maticvigil.com/",
-									],
+									rpcUrls: ["https://rpc-mumbai.matic.today"],
 									nativeCurrency: {
 										name: "Mumbai Matic",
 										symbol: "MATIC",
@@ -53,6 +57,7 @@ const Working = () => {
 								},
 							],
 						});
+						setCurrentChain(PolygonChain);
 					} catch (error) {
 						console.log(error);
 					}
@@ -73,6 +78,16 @@ const Working = () => {
 			const { ethereum } = window;
 
 			if (ethereum) {
+				const gettingChain = await ethereum.request({
+					method: "eth_chainId",
+				});
+
+				console.log(`Got the ChainID as: ${gettingChain}`);
+
+				if (gettingChain === PolygonChain) {
+					setCurrentChain(PolygonChain);
+				}
+
 				const provider = new ethers.providers.Web3Provider(
 					ethereum,
 					"any"
@@ -588,7 +603,7 @@ const Working = () => {
 
 	return (
 		<>
-			{network === "Polygon Mumbai Testnet" ? (
+			{currentChain === PolygonChain ? (
 				<>
 					{!currentAccount && renderNotConnectedContainer()}
 					{currentAccount && renderInputForm()}
