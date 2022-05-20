@@ -58,3 +58,20 @@
 		text-shadow: 0.2px 0.2px #8b4513;
 	}
 }
+
+.featured-on-producthunt {
+	background: #d3d3d3;
+}
+
+.featured-image {
+	width: 250px;
+	height: 54px;
+	background: #2f2c28;
+	border-radius: 1rem;
+	box-shadow: 5px 5px #cd853f;
+	margin-bottom: 20px;
+}
+
+.featured-image:hover {
+	box-shadow: 5px 5px #8b4513;
+}

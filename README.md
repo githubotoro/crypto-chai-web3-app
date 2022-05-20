@@ -8,7 +8,7 @@
   </a>
   
   <p align="center">
-    <a href="https://crypto-chai.vercel.app/"><strong>#stayTORO »</strong></a>
+    <a href="https://www.producthunt.com/posts/crypto-chai"><strong>Product Hunt »</strong></a>
     <br />
     <a href="https://crypto-chai.vercel.app/">View Project</a>
     |
@@ -196,6 +196,8 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 <a name="project-links"></a>
 
 ## Project Links 🔗
+
+> **Product Hunt Link** : [https://www.producthunt.com/posts/crypto-chai](https://www.producthunt.com/posts/crypto-chai)
 
 > **GitHub Web3 App Project Link** : [https://github.com/githubotoro/crypto-chai-web3-app](https://github.com/githubotoro/crypto-chai-web3-app)
 
