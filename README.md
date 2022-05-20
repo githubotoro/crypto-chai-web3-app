@@ -110,7 +110,7 @@ Crypto Chai is the Decenrtalized Chai Stop (aka Chai Ki Tapri) on Polygon. Whene
 
 ### Font Used ✒️
 
--   [Erica One](https://fonts.google.com/specimen/Erica+One)
+-   [Titan One](https://fonts.google.com/specimen/Titan+One?category=Display)
 
 <!-- FONT USED -->
 
