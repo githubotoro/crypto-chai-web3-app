@@ -595,7 +595,7 @@ const Working = () => {
 				cryptoChai.off("NewMemo", onNewMemo);
 			}
 		};
-	}, [currentAccount]);
+	}, [currentAccount, owner, chais, ownerName]);
 
 	// Formatting timestamp
 	const stylizeTimestamp = (timestamp) => {
