@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://crypto-chai.vercel.app/">
-    <img src="Images/crypto-chai-logo.png" alt="logo" height="100">
+    <img src="Images/crypto-chai-logo.png" alt="logo" width="15%">
     <h1><b>CRYPTO CHAI</b><br/><b>Your Decentralized "Chai Ki Tapri"</b></h1>
   </a>
   
@@ -69,7 +69,7 @@
 
 <div align="center">
 <a href="https://crypto-chai.vercel.app/">
-    <img src="Images/crypto-chai-title.png" alt="logo" height="100">
+    <img src="Images/crypto-chai-title.png" alt="logo" width="100%">
 </a>
 </div>
 
@@ -226,7 +226,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 <div align="center">
   <a href="https://crypto-chai.vercel.app">
-    <img src="Images/crypto-chai-illustration.svg" alt="logo" height="250">
+    <img src="Images/crypto-chai-illustration.svg" alt="logo" width="30%">
     <h1><b>With ☕ from Uday!</b></h1>
   </a>
 </div>
